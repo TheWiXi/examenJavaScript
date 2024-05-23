@@ -17,12 +17,11 @@
 			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
 			<li class="divider" data-text="main">Main</li>
 			<li>
-				<a href="#"><i class='bx bxs-inbox icon' ></i> Elements <i class='bx bx-chevron-right icon-right' ></i></a>
+				<a href="#"><i class='bx bxs-inbox icon' ></i>Filters<i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
-					<li><a href="#">Alert</a></li>
-					<li><a href="#">Badges</a></li>
-					<li><a href="#">Breadcrumbs</a></li>
-					<li><a href="#">Button</a></li>
+					<li><a id="YEAR" href="#">YEAR</a></li>
+					<li><a id="ACTORS" href="#">ACTORS</a></li>
+					<li><a id="RANK" href="#">RANK</a></li>
 				</ul>
 			</li>
 			<li><a href="#"><i class='bx bxs-chart icon' ></i> Charts</a></li>
@@ -65,18 +64,18 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1 class="title">Dashboard</h1>
+			<h1 class="title">Views Stats</h1>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">Dashboard</a></li>
+				<li><a href="#" class="active">Views Stats</a></li>
 			</ul>
 			<div class="info-data">
 				<div class="card">
 					<div class="head">
 						<div>
-							<h2>1500</h2>
-							<p>Traffic</p>
+							<h2>1500 Views</h2>
+							<p>Suspenso</p>
 						</div>
 						<i class='bx bx-trending-up icon' ></i>
 					</div>
@@ -86,8 +85,8 @@
 				<div class="card">
 					<div class="head">
 						<div>
-							<h2>234</h2>
-							<p>Sales</p>
+							<h2>234 disLikes</h2>
+							<p>Romance</p>
 						</div>
 						<i class='bx bx-trending-down icon down' ></i>
 					</div>
@@ -97,8 +96,8 @@
 				<div class="card">
 					<div class="head">
 						<div>
-							<h2>465</h2>
-							<p>Pageviews</p>
+							<h2>465 Likes</h2>
+							<p>Accion</p>
 						</div>
 						<i class='bx bx-trending-up icon' ></i>
 					</div>
@@ -108,8 +107,8 @@
 				<div class="card">
 					<div class="head">
 						<div>
-							<h2>235</h2>
-							<p>Visitors</p>
+							<h2>235 Comments</h2>
+							<p>Comedia</p>
 						</div>
 						<i class='bx bx-trending-up icon' ></i>
 					</div>
@@ -119,11 +118,20 @@
 			</div>
 			<div class="data">
 				<div class="content-data">
-					<div class="head">
-						<h3>Sales Report</h3>
-					</div>
 					<!-- conteido -->
-					<h1>Hola Mundo</h1>
+					<div id="head" class="headd">
+						<div>
+							<h3>Best Movies</h3>
+							<p class="small">Click on movie for show information</p>
+						</div>
+						<div class="searchs">
+							<input id = "inputMovie" type="text" placeholder="Name movie">
+							<button id="search">Search</button>
+						</div>
+					</div>
+					<div class="gallery" id="gallery">
+
+					</div>
 				</div>
 			
 			</div>

@@ -209,6 +209,21 @@ li {
 	width: calc(100% - 60px);
 	left: 60px;
 }
+.small {
+	font-size: .8em;
+}
+.headd{
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+}
+.searchs{
+	padding-top: 1em;
+	padding-right: 5em;
+}
+.actors{
+	text-align: center;
+}
 /* NAVBAR */
 nav {
 	background: var(--light);
@@ -359,6 +374,21 @@ main .info-data {
 	grid-gap: 20px;
 }
 main .info-data .card {
+	padding: 20px;
+	border-radius: 10px;
+	background: var(--light);
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+}
+main .gallery {
+	margin-top: 36px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 20px;
+}
+main .gallery .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 20px;
 	border-radius: 10px;
 	background: var(--light);
